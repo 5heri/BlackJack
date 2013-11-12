@@ -17,8 +17,10 @@ public class Main {
 			System.out.println("DRAW");
 		} else if (game.didPlayerWin()) {
 			System.out.println("You WON");
-		} else {
+		} else if (game.didHouseWin()) {
 			System.out.println("You LOST");
+		} else {
+			System.out.println("ERROR");
 		}
 		
 		System.out.println("Your Score: " + game.getPlayerScore());
